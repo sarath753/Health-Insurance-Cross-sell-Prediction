@@ -24,23 +24,20 @@ This project focuses on predicting whether a customer will be interested in a ve
    git clone https://github.com/your-username/your-repo.git
    cd your-repo
    ```
-2. Install dependencies  
-   ```bash
-   pip install -r requirements.txt
-   ```  
-3. Download the dataset  
-   ```bash
-   kaggle datasets download anmolkumar/health-insurance-cross-sell-prediction
-   unzip health-insurance-cross-sell-prediction.zip
-   ```  
-4. Run the model training script  
-   ```bash
-   python train.py
-   ```  
-5. Launch the Streamlit app  
-   ```bash
-   streamlit run app.py
-   ```  
+2. Create a Kaggle account and get an API token
+- Go to Kaggle → Account → API.
+- Click "Create New API Token" (this downloads a kaggle.json file).
+- Keep this file ready to upload in the first code cell.
+
+3. Run the Jupyter Notebook or Google Colab
+- Open the notebook and upload your kaggle.json file when prompted.
+- Run all the cells sequentially to download the dataset, train the model, and save the pipeline.
+
+4. Launch the Streamlit app
+- Once all cells are executed, start the Streamlit app by pasting the following link in your browser:
+  ```
+  https://a927-34-170-177-156.ngrok-free.app
+  ```
 
 ## 🚀 Prediction  
 To make predictions, use:  
