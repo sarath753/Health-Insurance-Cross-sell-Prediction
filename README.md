@@ -108,23 +108,19 @@ Feel free to open an issue or pull request for improvements!
 
 ## ⚙️ How to Run Final Project Code
 
-1. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
+1. **Use Google Colab**
+  - Locate the file named Final Project code in the repository
+  - Make sure all the lines of code are runned in sequentially and install the required packages
+  - Make sure to follow the steps mentioned above in the midterm work of how to run the code and the final project work just requires to run the cells sequentially.
 
-2. **Train or Load the model**
 
-- Either re-train from scratch using the provided notebooks/scripts.
-
-- Or load the trained pipeline (insurance_sell_prediction_pipeline.joblib).
-
-3. **Launch the Streamlit App**
+2. **Launch the Streamlit App**
    
     ```bash 
     streamlit run app.py
 
-4. **Access the Web App**
+3. **Access the Web App**
 
 - Locally: Open your browser and go to: http://localhost:8501
 
-- If using Colab: Use pyngrok to generate and open a public link.
+- If using Colab: Use pyngrok to generate and open a public link (run the last four cells code).
