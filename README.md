@@ -79,3 +79,51 @@ print(f'Prediction: {pred[0]}, Probability: {prob}')
 
 ## 🤝 Contributing  
 Feel free to open an issue or pull request for improvements!  
+
+
+---
+
+# 🆕 Work Done for Final Project
+
+## ✨ Enhancements: Fairness, Reliability, and Robustness
+
+### 🔹 Fairness Improvement
+- Implemented **FairShap** reweighting by reducing the influence of the sensitive attribute **Gender**.
+- Decreased **Demographic Parity** difference from **0.1309** ➔ **0.0098**.
+- Decreased **Equal Opportunity** difference from **0.0382** ➔ **0.0018**.
+- Maintained strong model accuracy (~86.58%) while achieving more equitable outcomes across groups.
+
+### 🔹 Reliability Improvement
+- Applied **Temperature Scaling** for model calibration.
+- Reduced the **Expected Calibration Error (ECE)**:
+  - ECE before scaling: **0.0496**
+  - ECE after scaling (T=1.5): **0.0344**
+- Plotted **Reliability Diagrams** to visualize improvements in model calibration.
+
+### 🔹 Robustness Improvement
+- Simulated **Out-of-Distribution (OOD)** shift by inflating the `Annual_Premium` feature by 20%.
+- Evaluated model stability under perturbations:
+  - ECE on OOD data before scaling: **0.0421**
+  - ECE on OOD data after scaling: **0.0322**
+- Demonstrated that the model remains reliable under real-world data shifts after improvements.
+
+## ⚙️ How to Run Final Project Code
+
+1. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+
+2. **Train or Load the model**
+
+- Either re-train from scratch using the provided notebooks/scripts.
+
+- Or load the trained pipeline (insurance_sell_prediction_pipeline.joblib).
+
+3. **Launch the Streamlit App**
+   streamlit run app.py
+
+5. **Access the Web App**
+
+- Locally: Open your browser and go to: http://localhost:8501
+
+- If using Colab: Use pyngrok to generate and open a public link.
