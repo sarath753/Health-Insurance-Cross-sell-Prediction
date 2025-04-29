@@ -101,10 +101,9 @@ Feel free to open an issue or pull request for improvements!
 - Plotted **Reliability Diagrams** to visualize improvements in model calibration.
 
 ### 🔹 Robustness Improvement
-- Simulated **Out-of-Distribution (OOD)** shift by inflating the `Annual_Premium` feature by 20%.
-- Evaluated model stability under perturbations:
-  - ECE on OOD data before scaling: **0.0421**
-  - ECE on OOD data after scaling: **0.0322**
+- **5% Noise Added** : Accuracy dropped slightly (0.785 → 0.780), ECE improved (0.043 → 0.035), showing better calibration under noise.
+
+- **10% Samples Removed**: Accuracy stayed stable at 0.783, ECE remained low (0.042), indicating robustness to missing data.
 - Demonstrated that the model remains reliable under real-world data shifts after improvements.
 
 ## ⚙️ How to Run Final Project Code
