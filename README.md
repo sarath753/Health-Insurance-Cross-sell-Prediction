@@ -121,7 +121,8 @@ Feel free to open an issue or pull request for improvements!
 
 3. **Launch the Streamlit App**
    
- ```streamlit run app.py```
+ ```bash 
+ streamlit run app.py```
 
 5. **Access the Web App**
 
