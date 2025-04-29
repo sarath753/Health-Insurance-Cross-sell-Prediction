@@ -120,7 +120,8 @@ Feel free to open an issue or pull request for improvements!
 - Or load the trained pipeline (insurance_sell_prediction_pipeline.joblib).
 
 3. **Launch the Streamlit App**
- ```streamlit run app.py
+   
+ ```streamlit run app.py```
 
 5. **Access the Web App**
 
