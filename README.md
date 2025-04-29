@@ -121,10 +121,10 @@ Feel free to open an issue or pull request for improvements!
 
 3. **Launch the Streamlit App**
    
- ```bash 
- streamlit run app.py ```
+    ```bash 
+    streamlit run app.py
 
-5. **Access the Web App**
+4. **Access the Web App**
 
 - Locally: Open your browser and go to: http://localhost:8501
 
