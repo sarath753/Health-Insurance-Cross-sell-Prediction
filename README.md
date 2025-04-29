@@ -88,10 +88,10 @@ Feel free to open an issue or pull request for improvements!
 ## ✨ Enhancements: Fairness, Reliability, and Robustness
 
 ### 🔹 Fairness Improvement
-- Implemented **FairShap** reweighting by reducing the influence of the sensitive attribute **Gender**.
-- Decreased **Demographic Parity** difference from **0.1309** ➔ **0.0098**.
-- Decreased **Equal Opportunity** difference from **0.0382** ➔ **0.0018**.
-- Maintained strong model accuracy (~86.58%) while achieving more equitable outcomes across groups.
+- Applied **FairShap** reweighting to reduce gender bias.  
+- **EODDS** dropped significantly: `0.088 → 0.0086`  
+- Accuracy stayed nearly intact: `0.785 → 0.780`, showing improved fairness with minimal performance loss.
+
 
 ### 🔹 Reliability Improvement
 - Applied **Temperature Scaling** for model calibration.
